@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial,sana-serif;
+    background-color: #f1edf2;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #402744;
+    color: white;
+    padding: 20px 40px;
+}
+.nav-links {
+   display: flex;
+   gap: 25px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.heading {
+    text-align: center;
+    color: #402744;
+    margin: 35px 0;
+}
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.product-card {
+    display: flex;
+    background-color: white;
+    max-width: 700px;
+    width: 100%;
+    border: 2px solid #c7b9ca;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #00000020;
+}
+.product-card img {
+    width: 50%;
+}
+.product-info {
+    padding: 25px;
+    flex: 1;
+}
+.tag {
+    background-color: #e9ddec;
+    color: #402744;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.product-info h2 {
+    color: #402744;
+    margin: 20px 0 10px;
+}
+.description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+.rating {
+    margin-bottom: 15px;
+}
+.price {
+    color: #402744;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #402744;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #684b70;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: #402744;
+    color: white;
+}
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: coloumn;
+        gap: 15px;
+        padding: 20px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .product-card img {
+        width: 100%;
+        height: 220px;
+    }
+    .product-info {
+        padding: 20px;
+    }
+    .heading{
+        font-size: 23px;
+    }
+}
